@@ -27,6 +27,14 @@ def sort_operations():
     return sorted_list
 
 
+def sort_last_5_operations():
+    stocks = sort_operations()
+    stocks_sorted = sorted(stocks, key=lambda x: x['date'], reverse=True)
+    return stocks_sorted[:5]
+
+
+
+
 
 
 
